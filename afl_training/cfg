@@ -1,0 +1,307 @@
+digraph {
+	"4d4" [label="process+0x1c7
+0x1bd1: mov     byte ptr [rax], 0 ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"4d3" [label="process+0x1c4
+0x1bce: add     rax, rdx ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"4d2" [label="process+0x1c2
+0x1bcc: cdqe ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"4d0" [label="process+0x1bb
+0x1bc5: mov     rdx, [rbp+rest] ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"4d1" [label="process+0x1bf
+0x1bc9: mov     eax, [rbp+len] ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"4cf" [label="process+0x1b7
+0x1bc1: mov     [rbp+rest], rax ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	"4cc" [label="process+0x1ac
+0x1bb6: mov     [rbp+len], eax ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4ce" [label="process+0x1b3
+0x1bbd: add     rax, 1 ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	"4a3" [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4cd" [label="process+0x1af
+0x1bb9: mov     rax, [rbp+rest] ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	"4a2" [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4a1" [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4bc" [label="0x249342 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249342: mov qword ptr [r13], r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	498 [label="0x2492b1 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2492b1: lea esi, [rdi - 0x30] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	490 [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4a5" [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"3ed" [label="0x24916b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24916b: mov r13, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	493 [label="0x24929b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24929b: movzx edi, byte ptr [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"48f" [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"48e" [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4a4" [label="0x249294 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249294: mov rsi, r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"3e0" [label="process+0x1a1
+0x1bab: mov     rsi, rax; endptr ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	491 [label="0x249294 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249294: mov rsi, r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	347 [label="read
+0x31407f: syscall  ; 
+within 	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	485 [label="0x2492b1 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2492b1: lea esi, [rdi - 0x30] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"47d" [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	492 [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"3de" [label="process+0x198
+0x1ba2: lea     rax, [rbp+rest] ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"47f" [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"33f" [label="main+0x5b
+0x1ca7: mov     edi, 0; fd ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"33e" [label="main+0x58
+0x1ca4: mov     rsi, rax; buf ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"33d" [label="main+0x53
+0x1c9f: mov     edx, 64h ; 'd'; nbytes ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	480 [label="0x24929b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24929b: movzx edi, byte ptr [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"47c" [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"47b" [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"47e" [label="0x249294 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249294: mov rsi, r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"33c" [label="main+0x4f
+0x1c9b: lea     rax, [rbp+input] ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	472 [label="0x2492b1 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2492b1: lea esi, [rdi - 0x30] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"46a" [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"46c" [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"46d" [label="0x24929b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24929b: movzx edi, byte ptr [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	469 [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	468 [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"46b" [label="0x249294 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249294: mov rsi, r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"45f" [label="0x2492b1 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2492b1: lea esi, [rdi - 0x30] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	457 [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	459 [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"45a" [label="0x24929b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24929b: movzx edi, byte ptr [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	456 [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	455 [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"4d3" -> "4d4" [label="Use: rax Value: 0x7f00004cbd79"]
+	"4d2" -> "4d3" [label="Use: rax Value: *0x43d11c"]
+	"4d0" -> "4d3" [label="Use: rdx Value: rest=*0x7f000008ec5d"]
+	"4cf" -> "4d0" [label="Use: 0x7f000008ebf8 Value: rest=*0x7f000008ec5d"]
+	"4ce" -> "4cf" [label="Use: rax Value: *0x7f000008ec5d"]
+	"4cd" -> "4ce" [label="Use: rax Value: rest=*0x7f000008ec5c"]
+	"4bc" -> "4cd" [label="Use: 0x7f000008ebf8 Value: *0x7f000008ec5c"]
+	"4a5" -> "4bc" [label="Use: r8 Value: *0x7f000008ec5c"]
+	"3ed" -> "4bc" [label="Use: r13 Value: *0x7f000008ebf8"]
+	"3e0" -> "3ed" [label="Use: rsi Value: *0x7f000008ebf8"]
+	"3de" -> "3e0" [label="Use: rax Value: &rest=*0x7f000008ebf8"]
+	"4a4" -> "4a5" [label="Use: rsi Value: *0x7f000008ec5b"]
+	492 -> "4a4" [label="Use: r8 Value: *0x7f000008ec5b"]
+	491 -> 492 [label="Use: rsi Value: *0x7f000008ec5a"]
+	491 -> 493 [label="Use: rsi Value: *0x7f000008ec5a"]
+	"47f" -> 491 [label="Use: r8 Value: *0x7f000008ec5a"]
+	"47e" -> "47f" [label="Use: rsi Value: *0x7f000008ec59"]
+	"47e" -> 480 [label="Use: rsi Value: *0x7f000008ec59"]
+	"46c" -> "47e" [label="Use: r8 Value: *0x7f000008ec59"]
+	"46b" -> "46c" [label="Use: rsi Value: *0x7f000008ec58"]
+	"46b" -> "46d" [label="Use: rsi Value: *0x7f000008ec58"]
+	459 -> "46b" [label="Use: r8 Value: *0x7f000008ec58"]
+	"4d1" -> "4d2" [label="Use: rax Value: len=*0x43d11c"]
+	"4cc" -> "4d1" [label="Use: 0x7f000008ebf4 Value: len=*0x43d11c"]
+	"4a3" -> "4cc" [label="Use: rax Value: *0x43d11c"]
+	"4a2" -> "4a3" [label="Use: rsi Value: 0x4"]
+	"4a1" -> "4a3" [label="Use: rax Value: *0x43d118"]
+	490 -> "4a1" [label="Use: rax Value: *0x6c81c"]
+	"48f" -> 490 [label="Use: rsi Value: 0x4"]
+	"48e" -> 490 [label="Use: rax Value: *0x6c818"]
+	"47d" -> "48e" [label="Use: rax Value: *0xad9c"]
+	"47c" -> "47d" [label="Use: rsi Value: 0x4"]
+	"47b" -> "47d" [label="Use: rax Value: *0xad98"]
+	"46a" -> "47b" [label="Use: rax Value: *0x115c"]
+	469 -> "46a" [label="Use: rsi Value: 0x4"]
+	468 -> "46a" [label="Use: rax Value: *0x1158"]
+	457 -> 468 [label="Use: rax Value: 0x1bc"]
+	456 -> 457 [label="Use: rsi Value: 0x4"]
+	455 -> 457 [label="Use: rax Value: 0x1b8"]
+	347 -> "45a" [label="Use: 0x7f000008ec58 Value: b'4444'"]
+	347 -> "46d" [label="Use: 0x7f000008ec59 Value: b'444h'"]
+	347 -> 480 [label="Use: 0x7f000008ec5a Value: b'44he'"]
+	347 -> 493 [label="Use: 0x7f000008ec5b Value: b'4hea'"]
+	"33f" -> 347 [label="Use: rdi Value: 0x0"]
+	"33e" -> 347 [label="Use: rsi Value: *0x7f000008ec50"]
+	"33d" -> 347 [label="Use: rdx Value: 0x64"]
+	"33c" -> "33e" [label="Use: rax Value: &input=*0x7f000008ec50"]
+	"45f" -> 469 [label="Use: rsi Value: 0x4"]
+	"45a" -> "45f" [label="Use: rdi Value: 0x34"]
+	472 -> "47c" [label="Use: rsi Value: 0x4"]
+	"46d" -> 472 [label="Use: rdi Value: 0x34"]
+	485 -> "48f" [label="Use: rsi Value: 0x4"]
+	480 -> 485 [label="Use: rdi Value: 0x34"]
+	498 -> "4a2" [label="Use: rsi Value: 0x4"]
+	493 -> 498 [label="Use: rdi Value: 0x34"]
+}

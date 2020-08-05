@@ -1,0 +1,209 @@
+digraph {
+	303646 [label="0x303646 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x303646: movdqu xmm4, xmmword ptr [rax] ; xmm4 = 0xa43006261294b5c613d006261
+within   length = strlen((char *)p);
+
+" style=filled]
+	303630 [label="0x303630 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x303630: mov rax, rdi ; rax = 0x9004208f -> 62
+within   length = strlen((char *)p);
+
+" style=filled]
+	ed2c [label="0xed2c mmap -> ./pcretest ./pcretest
+0xed2c: add rdi, qword ptr [rbx + 0x10] ; rdi = 0x9004208f -> 62
+PCHARS(post_start, cb->subject, cb->start_match,
+
+" style=filled]
+	"29edd" [label="0x29edd mmap -> ./pcretest ./pcretest
+0x29edd: mov qword ptr [rsp + 0xd0], rax ; store(0x7f000008c600,0x9004208e) -> 6261
+      cb.subject          = (PCRE_SPTR)md->start_subject;
+
+" style=filled]
+	ed15 [label="0xed15 mmap -> ./pcretest ./pcretest
+0xed15: movsxd rdi, dword ptr [rbx + 0x1c] ; rdi = 0x1
+PCHARS(post_start, cb->subject, cb->start_match,
+
+" style=filled]
+	eb8c [label="0xeb8c mmap -> ./pcretest ./pcretest
+0xeb8c: mov rbx, rdi ; rbx = 0x7f000008c5f0 -> ff00000002
+{
+
+" style=filled]
+	"29ecf" [label="0x29ecf mmap -> ./pcretest ./pcretest
+0x29ecf: mov rax, qword ptr [r12 + 0xa0] ; rax = 0x9004208e -> 6261
+      cb.subject          = (PCRE_SPTR)md->start_subject;
+
+" style=filled]
+	"29eff" [label="0x29eff mmap -> ./pcretest ./pcretest
+0x29eff: mov dword ptr [rsp + 0xdc], ecx ; store(0x7f000008c60c,0x1)
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	"29f5c" [label="0x29f5c mmap -> ./pcretest ./pcretest
+0x29f5c: lea rdi, [rsp + 0xc0] ; rdi = 0x7f000008c5f0 -> ff00000002
+      if ((rrc = (*PUBL(callout))(&cb)) > 0) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	32069 [label="0x32069 mmap -> ./pcretest ./pcretest
+0x32069: mov qword ptr [rsp + 0x150], r11 ; store(0x7f000008c860,0x9004208e) -> 6261
+md->start_subject = (PCRE_PUCHAR)subject;
+
+" style=filled]
+	"2d9fd" [label="0x2d9fd mmap -> ./pcretest ./pcretest
+0x2d9fd: mov r12, rbx ; r12 = 0x7f000008c7c0 -> 3
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	"29efc" [label="0x29efc mmap -> ./pcretest ./pcretest
+0x29efc: sub rcx, rax ; rcx = 0x1
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	"31d5b" [label="0x31d5b mmap -> ./pcretest ./pcretest
+0x31d5b: mov r11, rdx ; r11 = 0x9004208e -> 6261
+{
+
+" style=filled]
+	"299b1" [label="0x299b1 mmap -> ./pcretest ./pcretest
+0x299b1: mov rbx, rax ; rbx = 0x7f000008c7c0 -> 2
+   else condassert = FALSE;
+
+" style=filled]
+	"29eec" [label="0x29eec mmap -> ./pcretest ./pcretest
+0x29eec: mov rcx, qword ptr [rsp + 8] ; rcx = 0x9004208f -> 62
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	a972 [label="0xa972 mmap -> ./pcretest ./pcretest
+0xa972: mov rdx, rbp ; rdx = 0x9004208e -> 6261
+        PCRE_EXEC(count, re, extra, bptr, len, start_offset,
+
+" style=filled]
+	"299a7" [label="0x299a7 mmap -> ./pcretest ./pcretest
+0x299a7: mov rax, r12 ; rax = 0x7f000008c7c0 -> 2
+   else condassert = FALSE;
+
+" style=filled]
+	"2da09" [label="0x2da09 mmap -> ./pcretest ./pcretest
+0x2da09: mov qword ptr [rsp + 8], rax ; store(0x7f000008c538,0x9004208f) -> 62
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	28896 [label="0x28896 mmap -> ./pcretest ./pcretest
+0x28896: mov r12, r8 ; r12 = 0x7f000008c7c0 -> 3
+  switch(op)
+
+" style=filled]
+	"2d9ee" [label="0x2d9ee mmap -> ./pcretest ./pcretest
+0x2d9ee: mov rax, qword ptr [rbx + 0xb0] ; rax = 0x9004208f -> 62
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	"329d9" [label="0x329d9 mmap -> ./pcretest ./pcretest
+0x329d9: mov r8, r14 ; r8 = 0x7f000008c7c0 -> 0
+  rc = match(start_match, md->start_code, start_match, 2, md, NULL, 0);
+
+" style=filled]
+	"299c6" [label="0x299c6 mmap -> ./pcretest ./pcretest
+0x299c6: mov r8, rbx ; r8 = 0x7f000008c7c0 -> 2
+      RMATCH(eptr, ecode + 1 + LINK_SIZE, offset_top, md, NULL, RM4);
+
+" style=filled]
+	"2ff18" [label="0x2ff18 mmap -> ./pcretest ./pcretest
+0x2ff18: mov qword ptr [r12 + 0xb0], rax ; store(0x7f000008c870,0x9004208f) -> 62
+      md->start_match_ptr = mstart;
+
+" style=filled]
+	"326bd" [label="0x326bd mmap -> ./pcretest ./pcretest
+0x326bd: mov r14, rax ; r14 = 0x7f000008c7c0 -> 90018a30
+    while (t < md->end_subject && !IS_NEWLINE(t)) t++;
+
+" style=filled]
+	"2ff13" [label="0x2ff13 mmap -> ./pcretest ./pcretest
+0x2ff13: mov rax, qword ptr [rsp + 8] ; rax = 0x9004208f -> 62
+      md->start_match_ptr = mstart;
+
+" style=filled]
+	"326a0" [label="0x326a0 mmap -> ./pcretest ./pcretest
+0x326a0: lea rax, [rsp + 0xb0] ; rax = 0x7f000008c7c0 -> 90018a30
+    while (t < md->end_subject && !IS_NEWLINE(t)) t++;
+
+" style=filled]
+	29511 [label="0x29511 mmap -> ./pcretest ./pcretest
+0x29511: mov qword ptr [rsp + 8], r14 ; store(0x7f000008c358,0x9004208f) -> 62
+    break;
+
+" style=filled]
+	"2889c" [label="0x2889c mmap -> ./pcretest ./pcretest
+0x2889c: mov r14, rdi ; r14 = 0x9004208e -> 6261
+  switch(op)
+
+" style=filled]
+	"2b2af" [label="0x2b2af mmap -> ./pcretest ./pcretest
+0x2b2af: mov r14, rdx ; r14 = 0x9004208f -> 62
+      if (ecode[1] != *eptr++) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	"299cb" [label="0x299cb mmap -> ./pcretest ./pcretest
+0x299cb: mov rdi, r14 ; rdi = 0x9004208e -> 6261
+      RMATCH(eptr, ecode + 1 + LINK_SIZE, offset_top, md, NULL, RM4);
+
+" style=filled]
+	"329dc" [label="0x329dc mmap -> ./pcretest ./pcretest
+0x329dc: mov rdi, r15 ; rdi = 0x9004208e -> 6261
+  rc = match(start_match, md->start_code, start_match, 2, md, NULL, 0);
+
+" style=filled]
+	"2b290" [label="0x2b290 mmap -> ./pcretest ./pcretest
+0x2b290: lea rdx, [r14 + 1] ; rdx = 0x9004208f -> 62
+      if (ecode[1] != *eptr++) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	"326ad" [label="0x326ad mmap -> ./pcretest ./pcretest
+0x326ad: mov r15, rbp ; r15 = 0x9004208e -> 6261
+    while (t < md->end_subject && !IS_NEWLINE(t)) t++;
+
+" style=filled]
+	303646 -> 303646 [label="Use: 0x-1 Value: -1 Iter: 1"]
+	303630 -> 303646 [label="Use: rax Value: *0x9004208f Iter: 1"]
+	ed2c -> 303630 [label="Use: rdi Value: *0x9004208f Iter: 1"]
+	ed15 -> ed2c [label="Use: rdi Value: 0x1 Iter: 1"]
+	"29edd" -> ed2c [label="Use: 0x7f000008c600 Value: *0x9004208e Iter: 1"]
+	"29ecf" -> "29edd" [label="Use: rax Value: *0x9004208e Iter: 1"]
+	"29ecf" -> "29efc" [label="Use: rax Value: *0x9004208e Iter: 1"]
+	"2d9fd" -> "29ecf" [label="Use: r12 Value: *0x7f000008c7c0 Iter: 1"]
+	32069 -> "29ecf" [label="Use: 0x7f000008c860 Value: *0x9004208e Iter: 1"]
+	"31d5b" -> 32069 [label="Use: r11 Value: *0x9004208e Iter: 1"]
+	a972 -> "31d5b" [label="Use: rdx Value: *0x9004208e Iter: 1"]
+	"299b1" -> "299c6" [label="Use: rbx Value: *0x7f000008c7c0 Iter: 1"]
+	"299b1" -> "2d9fd" [label="Use: rbx Value: *0x7f000008c7c0 Iter: 1"]
+	"299b1" -> "2d9ee" [label="Use: rbx Value: *0x7f000008c7c0 Iter: 1"]
+	"299a7" -> "299b1" [label="Use: rax Value: *0x7f000008c7c0 Iter: 1"]
+	28896 -> "299a7" [label="Use: r12 Value: *0x7f000008c7c0 Iter: 1"]
+	28896 -> "2ff18" [label="Use: r12 Value: *0x7f000008c7c0 Iter: 1"]
+	"329d9" -> 28896 [label="Use: r8 Value: *0x7f000008c7c0 Iter: 1"]
+	"326bd" -> "329d9" [label="Use: r14 Value: *0x7f000008c7c0 Iter: 1"]
+	"326a0" -> "326bd" [label="Use: rax Value: *0x7f000008c7c0 Iter: 1"]
+	"29eff" -> ed15 [label="Use: 0x7f000008c60c Value: 0x1 Iter: 1"]
+	"29efc" -> "29eff" [label="Use: rcx Value: 0x1 Iter: 1"]
+	"29eec" -> "29efc" [label="Use: rcx Value: *0x9004208f Iter: 1"]
+	"2da09" -> "29eec" [label="Use: 0x7f000008c538 Value: *0x9004208f Iter: 1"]
+	"2d9ee" -> "2da09" [label="Use: rax Value: *0x9004208f Iter: 1"]
+	"2ff18" -> "2d9ee" [label="Use: 0x7f000008c870 Value: *0x9004208f Iter: 1"]
+	"2ff13" -> "2ff18" [label="Use: rax Value: *0x9004208f Iter: 1"]
+	"299c6" -> 28896 [label="Use: r8 Value: *0x7f000008c7c0 Iter: 1"]
+	29511 -> "2ff13" [label="Use: 0x7f000008c358 Value: *0x9004208f Iter: 1"]
+	"2b2af" -> 29511 [label="Use: r14 Value: *0x9004208f Iter: 1"]
+	"2b2af" -> "2b290" [label="Use: r14 Value: *0x9004208e Iter: 1"]
+	"2b2af" -> "299cb" [label="Use: r14 Value: *0x9004208e Iter: 1"]
+	"2b290" -> "2b2af" [label="Use: rdx Value: *0x9004208f Iter: 1"]
+	"2889c" -> 29511 [label="Use: r14 Value: *0x9004208f Iter: 1"]
+	"2889c" -> "2b290" [label="Use: r14 Value: *0x9004208e Iter: 1"]
+	"2889c" -> "299cb" [label="Use: r14 Value: *0x9004208e Iter: 1"]
+	"299cb" -> "2889c" [label="Use: rdi Value: *0x9004208e Iter: 1"]
+	"329dc" -> "2889c" [label="Use: rdi Value: *0x9004208e Iter: 1"]
+	"326ad" -> "329dc" [label="Use: r15 Value: *0x9004208e Iter: 1"]
+	eb8c -> ed2c [label="Use: rbx Value: *0x7f000008c5f0 Iter: 1"]
+	eb8c -> ed15 [label="Use: rbx Value: *0x7f000008c5f0 Iter: 1"]
+	"29f5c" -> eb8c [label="Use: rdi Value: *0x7f000008c5f0 Iter: 1"]
+}

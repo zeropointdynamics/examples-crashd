@@ -1,0 +1,240 @@
+digraph {
+	"1bd1" [label="process+0x1c7
+0x1bd1: mov     byte ptr [rax], 0 ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"1bce" [label="process+0x1c4
+0x1bce: add     rax, rdx ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"1bcc" [label="process+0x1c2
+0x1bcc: cdqe ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"1bc5" [label="process+0x1bb
+0x1bc5: mov     rdx, [rbp+rest] ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"1bc9" [label="process+0x1bf
+0x1bc9: mov     eax, [rbp+len] ; 
+			rest[len] = '\0'; // truncate string at specified offset
+
+" style=filled]
+	"1bc1" [label="process+0x1b7
+0x1bc1: mov     [rbp+rest], rax ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	"1bb6" [label="process+0x1ac
+0x1bb6: mov     [rbp+len], eax ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1bbd" [label="process+0x1b3
+0x1bbd: add     rax, 1 ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	249291 [label="0x249291 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249291: add rax, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1bb9" [label="process+0x1af
+0x1bb9: mov     rax, [rbp+rest] ; 
+			rest += 1;		  // skip the first char (should be a space)
+
+" style=filled]
+	249289 [label="0x249289 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249289: imul rax, r11 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24928d" [label="0x24928d mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24928d: movzx esi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	249342 [label="0x249342 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249342: mov qword ptr [r13], r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24926f" [label="0x24926f mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24926f: xor eax, eax ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"2492b1" [label="0x2492b1 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2492b1: lea esi, [rdi - 0x30] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24916b" [label="0x24916b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24916b: mov r13, rsi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	249297 [label="0x249297 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249297: lea r8, [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24929b" [label="0x24929b mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24929b: movzx edi, byte ptr [rsi + 1] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24924e" [label="0x24924e mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24924e: movzx edi, sil ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1bab" [label="process+0x1a1
+0x1bab: mov     rsi, rax; endptr ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	249294 [label="0x249294 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249294: mov rsi, r8 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"31407f" [label="read
+0x31407f: syscall  ; 
+within 	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"2491dd" [label="0x2491dd mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2491dd: mov rsi, rax ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1ba2" [label="process+0x198
+0x1ba2: lea     rax, [rbp+rest] ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"24926c" [label="0x24926c mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x24926c: mov r8, rbx ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1c9f" [label="main+0x53
+0x1c9f: mov     edx, 64h ; 'd'; nbytes ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"1ca4" [label="main+0x58
+0x1ca4: mov     rsi, rax; buf ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"1ca7" [label="main+0x5b
+0x1ca7: mov     edi, 0; fd ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"2491d4" [label="0x2491d4 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2491d4: movsx rax, byte ptr [rbx] ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"2491d0" [label="0x2491d0 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2491d0: add rbx, 1 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1c9b" [label="main+0x4f
+0x1c9b: lea     rax, [rbp+input] ; 
+	if (read(STDIN_FILENO, input, INPUTSIZE) < 0)
+
+" style=filled]
+	"2491b9" [label="0x2491b9 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x2491b9: mov rbx, r12 ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	249172 [label="0x249172 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x249172: mov r12, rdi ; 
+within 			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1bae" [label="process+0x1a4
+0x1bae: mov     rdi, rcx; nptr ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1b9e" [label="process+0x194
+0x1b9e: lea     rcx, [rax+4] ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1b9a" [label="process+0x190
+0x1b9a: mov     rax, [rbp+input] ; 
+			len = strtol(input + 4, &rest, 10);
+
+" style=filled]
+	"1a13" [label="process+0x9
+0x1a13: mov     [rbp+input], rdi ; 
+{
+
+" style=filled]
+	"1cda" [label="main+0x8e
+0x1cda: mov     rdi, rax; input ; 
+	int ret = process(input);
+
+" style=filled]
+	"1cd6" [label="main+0x8a
+0x1cd6: lea     rax, [rbp+input] ; 
+	int ret = process(input);
+
+" style=filled]
+	"1bce" -> "1bd1" [label="Use: rax Value: 0x7f00004cbd79 Iter: 1"]
+	"1bcc" -> "1bce" [label="Use: rax Value: *0x43d11c Iter: 1"]
+	"1bc5" -> "1bce" [label="Use: rdx Value: rest=*0x7f000008ec5d Iter: 1"]
+	"1bc1" -> "1bc5" [label="Use: 0x7f000008ebf8 Value: rest=*0x7f000008ec5d Iter: 1"]
+	"1bbd" -> "1bc1" [label="Use: rax Value: *0x7f000008ec5d Iter: 1"]
+	"1bb9" -> "1bbd" [label="Use: rax Value: rest=*0x7f000008ec5c Iter: 1"]
+	249342 -> "1bb9" [label="Use: 0x7f000008ebf8 Value: *0x7f000008ec5c Iter: 1"]
+	249297 -> 249342 [label="Use: r8 Value: *0x7f000008ec5c Iter: 1"]
+	249297 -> 249294 [label="Use: r8 Value: *0x7f000008ec5b Iter: 6"]
+	"24916b" -> 249342 [label="Use: r13 Value: *0x7f000008ebf8 Iter: 1"]
+	"1bab" -> "24916b" [label="Use: rsi Value: *0x7f000008ebf8 Iter: 1"]
+	"1ba2" -> "1bab" [label="Use: rax Value: &rest=*0x7f000008ebf8 Iter: 1"]
+	249294 -> 249297 [label="Use: rsi Value: *0x7f000008ec5b Iter: 7"]
+	249294 -> "24929b" [label="Use: rsi Value: *0x7f000008ec5a Iter: 6"]
+	"24926c" -> 249294 [label="Use: r8 Value: *0x7f000008ec55 Iter: 1"]
+	"2491d0" -> "24926c" [label="Use: rbx Value: *0x7f000008ec55 Iter: 1"]
+	"2491d0" -> "2491d4" [label="Use: rbx Value: *0x7f000008ec55 Iter: 1"]
+	"2491b9" -> "2491d0" [label="Use: rbx Value: *0x7f000008ec54 Iter: 1"]
+	249172 -> "2491b9" [label="Use: r12 Value: *0x7f000008ec54 Iter: 1"]
+	"1bae" -> 249172 [label="Use: rdi Value: *0x7f000008ec54 Iter: 1"]
+	"1b9e" -> "1bae" [label="Use: rcx Value: *0x7f000008ec54 Iter: 1"]
+	"1b9a" -> "1b9e" [label="Use: rax Value: input=*0x7f000008ec50 Iter: 1"]
+	"1a13" -> "1b9a" [label="Use: 0x7f000008ebe8 Value: input=*0x7f000008ec50 Iter: 1"]
+	"1cda" -> "1a13" [label="Use: rdi Value: *0x7f000008ec50 Iter: 1"]
+	"1cd6" -> "1cda" [label="Use: rax Value: &input=*0x7f000008ec50 Iter: 1"]
+	"1bc9" -> "1bcc" [label="Use: rax Value: len=*0x43d11c Iter: 1"]
+	"1bb6" -> "1bc9" [label="Use: 0x7f000008ebf4 Value: len=*0x43d11c Iter: 1"]
+	249291 -> "1bb6" [label="Use: rax Value: *0x43d11c Iter: 1"]
+	249291 -> 249289 [label="Use: rax Value: *0x6c81c Iter: 6"]
+	"24928d" -> 249291 [label="Use: rsi Value: 0x4 Iter: 7"]
+	249289 -> 249291 [label="Use: rax Value: *0x43d118 Iter: 7"]
+	"24926f" -> 249289 [label="Use: rax Value: 0x0 Iter: 1"]
+	"2492b1" -> "24928d" [label="Use: rsi Value: 0x4 Iter: 7"]
+	"24924e" -> "2492b1" [label="Use: rdi Value: 0x34 Iter: 1"]
+	"2491dd" -> "24924e" [label="Use: rsi Value: 0x34 Iter: 1"]
+	"2491d4" -> "2491dd" [label="Use: rax Value: 0x34 Iter: 1"]
+	"31407f" -> "2491d4" [label="Use: 0x7f000008ec55 Value: b'4444' Iter: 1"]
+	"31407f" -> "24929b" [label="Use: 0x7f000008ec56 Value: b'4444' Iter: 6"]
+	"1ca7" -> "31407f" [label="Use: rdi Value: 0x0 Iter: 1"]
+	"1ca4" -> "31407f" [label="Use: rsi Value: *0x7f000008ec50 Iter: 1"]
+	"1c9f" -> "31407f" [label="Use: rdx Value: 0x64 Iter: 1"]
+	"1c9b" -> "1ca4" [label="Use: rax Value: &input=*0x7f000008ec50 Iter: 1"]
+	"24929b" -> "2492b1" [label="Use: rdi Value: 0x34 Iter: 6"]
+}

@@ -1,0 +1,305 @@
+digraph {
+	"336e2" [label="0x336646 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x336646: movdqu xmm4, xmmword ptr [rax] ; 
+within   length = strlen((char *)p);
+
+" style=filled]
+	"336dc" [label="0x336630 mmap -> /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
+0x336630: mov rax, rdi ; 
+within   length = strlen((char *)p);
+
+" style=filled]
+	"336cb" [label="0xed2c mmap -> ./pcretest ./pcretest
+0xed2c: add rdi, qword ptr [rbx + 0x10] ; 
+PCHARS(post_start, cb->subject, cb->start_match,
+
+" style=filled]
+	"336c5" [label="0xed15 mmap -> ./pcretest ./pcretest
+0xed15: movsxd rdi, dword ptr [rbx + 0x1c] ; 
+PCHARS(post_start, cb->subject, cb->start_match,
+
+" style=filled]
+	"336c0" [label="0xeb6d mmap -> ./pcretest ./pcretest
+0xeb6d: pop rbx ; 
+}
+
+" style=filled]
+	"3365b" [label="0x29edd mmap -> ./pcretest ./pcretest
+0x29edd: mov qword ptr [rsp + 0xd0], rax ; 
+      cb.subject          = (PCRE_SPTR)md->start_subject;
+
+" style=filled]
+	33661 [label="0x29eff mmap -> ./pcretest ./pcretest
+0x29eff: mov dword ptr [rsp + 0xdc], ecx ; 
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	33691 [label="0xeb08 mmap -> ./pcretest ./pcretest
+0xeb08: push rbx ; 
+{
+
+" style=filled]
+	33658 [label="0x29ecf mmap -> ./pcretest ./pcretest
+0x29ecf: mov rax, qword ptr [r12 + 0xa0] ; 
+      cb.subject          = (PCRE_SPTR)md->start_subject;
+
+" style=filled]
+	33660 [label="0x29efc mmap -> ./pcretest ./pcretest
+0x29efc: sub rcx, rax ; 
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	33682 [label="0xeb8c mmap -> ./pcretest ./pcretest
+0xeb8c: mov rbx, rdi ; 
+{
+
+" style=filled]
+	"3362e" [label="0x2d9fd mmap -> ./pcretest ./pcretest
+0x2d9fd: mov r12, rbx ; 
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	"313c8" [label="0x32069 mmap -> ./pcretest ./pcretest
+0x32069: mov qword ptr [rsp + 0x150], r11 ; 
+md->start_subject = (PCRE_PUCHAR)subject;
+
+" style=filled]
+	"3365d" [label="0x29eec mmap -> ./pcretest ./pcretest
+0x29eec: mov rcx, qword ptr [rsp + 8] ; 
+      cb.start_match      = (int)(mstart - md->start_subject);
+
+" style=filled]
+	33676 [label="0x29f5c mmap -> ./pcretest ./pcretest
+0x29f5c: lea rdi, [rsp + 0xc0] ; 
+      if ((rrc = (*PUBL(callout))(&cb)) > 0) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	33621 [label="0x28960 mmap -> ./pcretest ./pcretest
+0x28960: pop rbx ; 
+}
+
+" style=filled]
+	31369 [label="0x31d5b mmap -> ./pcretest ./pcretest
+0x31d5b: mov r11, rdx ; 
+{
+
+" style=filled]
+	33631 [label="0x2da09 mmap -> ./pcretest ./pcretest
+0x2da09: mov qword ptr [rsp + 8], rax ; 
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	"31ffc" [label="0x28829 mmap -> ./pcretest ./pcretest
+0x28829: push rbx ; 
+{
+
+" style=filled]
+	"3135b" [label="0xa972 mmap -> ./pcretest ./pcretest
+0xa972: mov rdx, rbp ; 
+        PCRE_EXEC(count, re, extra, bptr, len, start_offset,
+
+" style=filled]
+	"3362c" [label="0x2d9ee mmap -> ./pcretest ./pcretest
+0x2d9ee: mov rax, qword ptr [rbx + 0xb0] ; 
+        mstart = md->start_match_ptr;   /* In case \K reset it */
+
+" style=filled]
+	"31feb" [label="0x299b1 mmap -> ./pcretest ./pcretest
+0x299b1: mov rbx, rax ; 
+   else condassert = FALSE;
+
+" style=filled]
+	"3361a" [label="0x2ff18 mmap -> ./pcretest ./pcretest
+0x2ff18: mov qword ptr [r12 + 0xb0], rax ; 
+      md->start_match_ptr = mstart;
+
+" style=filled]
+	"31fe8" [label="0x299a7 mmap -> ./pcretest ./pcretest
+0x299a7: mov rax, r12 ; 
+   else condassert = FALSE;
+
+" style=filled]
+	"335eb" [label="0xeff0 mmap -> ./pcretest ./pcretest
+0xeff0: pop r12 ; 
+}
+
+" style=filled]
+	33619 [label="0x2ff13 mmap -> ./pcretest ./pcretest
+0x2ff13: mov rax, qword ptr [rsp + 8] ; 
+      md->start_match_ptr = mstart;
+
+" style=filled]
+	"31fc7" [label="0xeff0 mmap -> ./pcretest ./pcretest
+0xeff0: pop r12 ; 
+}
+
+" style=filled]
+	"32ef4" [label="0xeb86 mmap -> ./pcretest ./pcretest
+0xeb86: push r12 ; 
+{
+
+" style=filled]
+	"32eb7" [label="0x29511 mmap -> ./pcretest ./pcretest
+0x29511: mov qword ptr [rsp + 8], r14 ; 
+    break;
+
+" style=filled]
+	"3155c" [label="0xeb86 mmap -> ./pcretest ./pcretest
+0xeb86: push r12 ; 
+{
+
+" style=filled]
+	"32e9a" [label="0xeff0 mmap -> ./pcretest ./pcretest
+0xeff0: pop r12 ; 
+}
+
+" style=filled]
+	"32e9c" [label="0xeff4 mmap -> ./pcretest ./pcretest
+0xeff4: pop r14 ; 
+}
+
+" style=filled]
+	"314ed" [label="0x28896 mmap -> ./pcretest ./pcretest
+0x28896: mov r12, r8 ; 
+  switch(op)
+
+" style=filled]
+	"327a7" [label="0xeb86 mmap -> ./pcretest ./pcretest
+0xeb86: push r12 ; 
+{
+
+" style=filled]
+	"327a5" [label="0xeb82 mmap -> ./pcretest ./pcretest
+0xeb82: push r14 ; 
+{
+
+" style=filled]
+	"314cb" [label="0x329d9 mmap -> ./pcretest ./pcretest
+0x329d9: mov r8, r14 ; 
+  rc = match(start_match, md->start_code, start_match, 2, md, NULL, 0);
+
+" style=filled]
+	32744 [label="0xeff0 mmap -> ./pcretest ./pcretest
+0xeff0: pop r12 ; 
+}
+
+" style=filled]
+	"3276a" [label="0x2b2af mmap -> ./pcretest ./pcretest
+0x2b2af: mov r14, rdx ; 
+      if (ecode[1] != *eptr++) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	"3147d" [label="0x326bd mmap -> ./pcretest ./pcretest
+0x326bd: mov r14, rax ; 
+    while (t < md->end_subject && !IS_NEWLINE(t)) t++;
+
+" style=filled]
+	32051 [label="0xeb86 mmap -> ./pcretest ./pcretest
+0xeb86: push r12 ; 
+{
+
+" style=filled]
+	32764 [label="0x2b290 mmap -> ./pcretest ./pcretest
+0x2b290: lea rdx, [r14 + 1] ; 
+      if (ecode[1] != *eptr++) RRETURN(MATCH_NOMATCH);
+
+" style=filled]
+	31478 [label="0x326a0 mmap -> ./pcretest ./pcretest
+0x326a0: lea rax, [rsp + 0xb0] ; 
+    while (t < md->end_subject && !IS_NEWLINE(t)) t++;
+
+" style=filled]
+	32011 [label="0x28896 mmap -> ./pcretest ./pcretest
+0x28896: mov r12, r8 ; 
+  switch(op)
+
+" style=filled]
+	32746 [label="0xeff4 mmap -> ./pcretest ./pcretest
+0xeff4: pop r14 ; 
+}
+
+" style=filled]
+	"31ff0" [label="0x299c6 mmap -> ./pcretest ./pcretest
+0x299c6: mov r8, rbx ; 
+      RMATCH(eptr, ecode + 1 + LINK_SIZE, offset_top, md, NULL, RM4);
+
+" style=filled]
+	"3204f" [label="0xeb82 mmap -> ./pcretest ./pcretest
+0xeb82: push r14 ; 
+{
+
+" style=filled]
+	32013 [label="0x2889c mmap -> ./pcretest ./pcretest
+0x2889c: mov r14, rdi ; 
+  switch(op)
+
+" style=filled]
+	"31ff2" [label="0x299cb mmap -> ./pcretest ./pcretest
+0x299cb: mov rdi, r14 ; 
+      RMATCH(eptr, ecode + 1 + LINK_SIZE, offset_top, md, NULL, RM4);
+
+" style=filled]
+	"31fc9" [label="0xeff4 mmap -> ./pcretest ./pcretest
+0xeff4: pop r14 ; 
+}
+
+" style=filled]
+	"3155a" [label="0xeb82 mmap -> ./pcretest ./pcretest
+0xeb82: push r14 ; 
+{
+
+" style=filled]
+	"336dc" -> "336e2" [label="Use: rax Value: *0x9004208f"]
+	"336cb" -> "336dc" [label="Use: rdi Value: *0x9004208f"]
+	"336c5" -> "336cb" [label="Use: rdi Value: 0x1"]
+	"336c0" -> "336cb" [label="Use: rbx Value: *0x7f000008c5f0"]
+	"336c0" -> "336c5" [label="Use: rbx Value: *0x7f000008c5f0"]
+	"3365b" -> "336cb" [label="Use: 0x7f000008c600 Value: *0x9004208e"]
+	33658 -> "3365b" [label="Use: rax Value: *0x9004208e"]
+	33658 -> 33660 [label="Use: rax Value: *0x9004208e"]
+	"3362e" -> 33658 [label="Use: r12 Value: *0x7f000008c7c0"]
+	"313c8" -> 33658 [label="Use: 0x7f000008c860 Value: *0x9004208e"]
+	31369 -> "313c8" [label="Use: r11 Value: *0x9004208e"]
+	"3135b" -> 31369 [label="Use: rdx Value: *0x9004208e"]
+	33621 -> "3362e" [label="Use: rbx Value: *0x7f000008c7c0"]
+	33621 -> "3362c" [label="Use: rbx Value: *0x7f000008c7c0"]
+	"31ffc" -> 33621 [label="Use: 0x7f000008c4e8 Value: *0x7f000008c7c0"]
+	"31feb" -> "31ffc" [label="Use: rbx Value: *0x7f000008c7c0"]
+	"31feb" -> "31ff0" [label="Use: rbx Value: *0x7f000008c7c0"]
+	"31fe8" -> "31feb" [label="Use: rax Value: *0x7f000008c7c0"]
+	"31fc7" -> "31fe8" [label="Use: r12 Value: *0x7f000008c7c0"]
+	"3155c" -> "31fc7" [label="Use: 0x7f000008c508 Value: *0x7f000008c7c0"]
+	"314ed" -> "3155c" [label="Use: r12 Value: *0x7f000008c7c0"]
+	"314cb" -> "314ed" [label="Use: r8 Value: *0x7f000008c7c0"]
+	"3147d" -> "314cb" [label="Use: r14 Value: *0x7f000008c7c0"]
+	31478 -> "3147d" [label="Use: rax Value: *0x7f000008c7c0"]
+	33691 -> "336c0" [label="Use: 0x7f000008c4c8 Value: *0x7f000008c5f0"]
+	33682 -> 33691 [label="Use: rbx Value: *0x7f000008c5f0"]
+	33676 -> 33682 [label="Use: rdi Value: *0x7f000008c5f0"]
+	33661 -> "336c5" [label="Use: 0x7f000008c60c Value: 0x1"]
+	33660 -> 33661 [label="Use: rcx Value: 0x1"]
+	"3365d" -> 33660 [label="Use: rcx Value: *0x9004208f"]
+	33631 -> "3365d" [label="Use: 0x7f000008c538 Value: *0x9004208f"]
+	"3362c" -> 33631 [label="Use: rax Value: *0x9004208f"]
+	"3361a" -> "3362c" [label="Use: 0x7f000008c870 Value: *0x9004208f"]
+	"335eb" -> "3361a" [label="Use: r12 Value: *0x7f000008c7c0"]
+	33619 -> "3361a" [label="Use: rax Value: *0x9004208f"]
+	"32eb7" -> 33619 [label="Use: 0x7f000008c358 Value: *0x9004208f"]
+	"32e9c" -> "32eb7" [label="Use: r14 Value: *0x9004208f"]
+	"327a5" -> "32e9c" [label="Use: 0x7f000008c338 Value: *0x9004208f"]
+	"3276a" -> "327a5" [label="Use: r14 Value: *0x9004208f"]
+	32764 -> "3276a" [label="Use: rdx Value: *0x9004208f"]
+	32746 -> 32764 [label="Use: r14 Value: *0x9004208e"]
+	"3204f" -> 32746 [label="Use: 0x7f000008c338 Value: *0x9004208e"]
+	32013 -> "3204f" [label="Use: r14 Value: *0x9004208e"]
+	"31ff2" -> 32013 [label="Use: rdi Value: *0x9004208e"]
+	"31fc9" -> "31ff2" [label="Use: r14 Value: *0x9004208e"]
+	"3155a" -> "31fc9" [label="Use: 0x7f000008c518 Value: *0x9004208e"]
+	"32ef4" -> "335eb" [label="Use: 0x7f000008c328 Value: *0x7f000008c7c0"]
+	"32e9a" -> "32ef4" [label="Use: r12 Value: *0x7f000008c7c0"]
+	"327a7" -> "32e9a" [label="Use: 0x7f000008c328 Value: *0x7f000008c7c0"]
+	32744 -> "327a7" [label="Use: r12 Value: *0x7f000008c7c0"]
+	32051 -> 32744 [label="Use: 0x7f000008c328 Value: *0x7f000008c7c0"]
+	32011 -> 32051 [label="Use: r12 Value: *0x7f000008c7c0"]
+	"31ff0" -> 32011 [label="Use: r8 Value: *0x7f000008c7c0"]
+}
